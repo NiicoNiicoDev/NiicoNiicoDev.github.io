@@ -20,7 +20,7 @@ footer {
 @media only screen and (max-width: 800px) {
   .leftbar {
     background-color:#202023;
-    width: 120px;
+    width: 75px;
     height: 100vh;
     position: fixed;
     z-index: 1;
@@ -28,6 +28,7 @@ footer {
     left: 0;
     overflow-x: hidden;
     visibility: hidden;
+    padding-top: 100px;
   }
 
   .rightbody {
@@ -215,7 +216,7 @@ footer {
 @media only screen and (min-width: 801px) {
   .leftbar {
     background-color:#202023;
-    width: 240px;
+    width: 140px;
     height: 100vh;
     position: fixed;
     z-index: 1;
@@ -223,6 +224,7 @@ footer {
     left: 0;
     overflow-x: hidden;
     transition-duration: 0.5s;
+    padding-top: 20px;
   }
   
   .rightbody {
