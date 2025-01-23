@@ -2,6 +2,8 @@ html, body {height: 100%;}
 
 * {
   user-select: none;
+  font-family:system-ui;
+  box-sizing: border-box;
 }
 
 .material-symbols-rounded {
@@ -17,15 +19,15 @@ footer {
 }
 
 /* For mobile devices */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1400px) {
   .leftbar {
+    position: fixed;
+    top: 40px;
+    left: 40px;
     background-color:#202023;
     width: 75px;
     height: 100vh;
-    position: fixed;
     z-index: 1;
-    top: 0;
-    left: 0;
     overflow-x: hidden;
     visibility: hidden;
     padding-top: 100px;
@@ -34,10 +36,14 @@ footer {
   .rightbody {
     width: 100%;
     height: 100vh;
-    margin-left: 10vw;
     align-items: center;
+    margin-left: 10vw;
     justify-content: center;
     transition-duration: 0.5s;
+  }
+
+  .rightbody > div {
+    padding-top: 100px;
   }
 
   footer {
@@ -47,6 +53,7 @@ footer {
   }
 
   #rcorners2 {
+  min-width: 300px; max-width: 800px;
   border-radius: 10px;
   background-color: #323236;
   padding: 5px;
@@ -120,10 +127,12 @@ footer {
     font-size: 48px;
     font-weight:normal;
   }
-  #portfolio_grid{
+  #portfolio_grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     gap: 10px;
     transition-duration: 0.5s;
   }
@@ -135,7 +144,31 @@ footer {
     transition-duration: 0.5s;
   }
 
+  .container {
+    display: flex;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: dodgerblue;
+    padding: 10px;
+  }
+  
+  .container > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
   .projectcontainer{
+    text-align: center;
+    margin: auto;
+    width: 256px;
+    height:fit-content; 
+    display: block;
+  }
+
+  .indexprojectcontainer{
     text-align: center;
     margin: auto;
     padding: 30px;
@@ -189,7 +222,7 @@ footer {
     color: #111;
     display: inline;
     line-height: 2em;
-    padding: 0.5em 2em;
+    padding: 1em 2em;
     text-decoration: none;
   }
   
@@ -213,28 +246,32 @@ footer {
 }
 
 /* For Desktop devices */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1401px) {
   .leftbar {
-    background-color:#202023;
-    width: 140px;
-    height: 100vh;
     position: fixed;
+    top: 40px;
+    left: 40px;
+    background-color:#202023;
+    width: fit-content;
+    height: fit-content;
     z-index: 1;
-    top: 0;
-    left: 0;
     overflow-x: hidden;
     transition-duration: 0.5s;
-    padding-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
   }
   
   .rightbody {
     width: 100%;
-    margin-left: clamp(200px, calc(240px + 5vw), 16vw);
-    margin-bottom: -100px;
+    margin-left: clamp(200px, calc(220px + 5vw), 16vw);
     height: 100vh;
     top: 0;
     right:0;
     transition-duration: 0.3s;
+  }
+
+  .rightbody > div {
+    padding-top: 3vh;
   }
 
   footer {
@@ -247,6 +284,8 @@ footer {
   }
 
   #rcorners2 {
+  min-width: 600px; 
+  max-width: 800px;
   border-radius: 10px;
   background-color: #323236;
   padding: 5px;
@@ -293,9 +332,12 @@ footer {
   }
 
   #portfolio_grid{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     gap: 10px;
     transition-duration: 0.5s;
   }
@@ -307,15 +349,27 @@ footer {
     transition-duration: 0.5s;
   }
 
+  .indeximage{
+    border-radius: 5px; 
+    height: 325px; 
+    width: 325px;
+    transition-duration: 0.5s;
+  }
+
   .portfolioimage:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.03);
+  }
+
+  .indeximage:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.03);
   }
 
   .projectcontainer{
     text-align: center;
-    margin: auto;
-    padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 512px;
     height:fit-content;
     display: inline-flex;
