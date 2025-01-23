@@ -43,7 +43,7 @@ footer {
   }
 
   .rightbody > div {
-    padding-top: 100px;
+    padding-top: 20px;
   }
 
   footer {
@@ -144,6 +144,18 @@ footer {
     transition-duration: 0.5s;
   }
 
+  .indeximage{
+    border-radius: 5px; 
+    height: 256px; 
+    width: 256px;
+    transition-duration: 0.5s;
+  }
+
+  .indeximage:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.03);
+  }
+
   .container {
     display: flex;
     column-gap: 50px;
@@ -171,7 +183,6 @@ footer {
   .indexprojectcontainer{
     text-align: center;
     margin: auto;
-    padding: 30px;
     width: 256px;
     height:fit-content; 
     display: block;
@@ -349,16 +360,16 @@ footer {
     transition-duration: 0.5s;
   }
 
+  .portfolioimage:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.03);
+  }
+
   .indeximage{
     border-radius: 5px; 
     height: 325px; 
     width: 325px;
     transition-duration: 0.5s;
-  }
-
-  .portfolioimage:hover {
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.03);
   }
 
   .indeximage:hover {
@@ -371,6 +382,15 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
     width: 512px;
+    height:fit-content;
+    display: inline-flex;
+  }
+
+  .indexprojectcontainer{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 320px;
     height:fit-content;
     display: inline-flex;
   }
