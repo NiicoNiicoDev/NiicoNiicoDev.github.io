@@ -40,6 +40,7 @@ footer {
     margin-left: 10vw;
     justify-content: center;
     transition-duration: 0.5s;
+    padding-bottom: 30px;
   }
 
   .rightbody > div {
@@ -189,6 +190,7 @@ footer {
     width: 256px;
     height:fit-content; 
     display: block;
+    margin-bottom: 30px;
   }
 
   .indexprojectcontainer{
@@ -290,6 +292,7 @@ footer {
     top: 0;
     right:0;
     transition-duration: 0.3s;
+    margin-bottom: 30px;
   }
 
   .rightbody > div {
