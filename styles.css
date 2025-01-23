@@ -146,8 +146,12 @@ footer {
 
   .indeximage{
     border-radius: 5px; 
-    height: 256px; 
-    width: 256px;
+    max-height: 256px;
+    min-height: 90px;
+    height: 50vw; 
+    max-width: 256px;
+    min-width: 90px;
+    width: 50vw;
     transition-duration: 0.5s;
   }
 
@@ -367,8 +371,12 @@ footer {
 
   .indeximage{
     border-radius: 5px; 
-    height: 325px; 
-    width: 325px;
+    max-height: 325px;
+    min-height: 256px;
+    height: 50vw; 
+    max-width: 325px;
+    min-width: 256px;
+    width: 50vw;
     transition-duration: 0.5s;
   }
 
