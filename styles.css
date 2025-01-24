@@ -57,7 +57,7 @@ footer {
     min-width: 200px; 
     max-width: 400px;
     border-radius: 10px;
-    background-color: #323236;
+    background-color: #28282b;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -150,6 +150,17 @@ footer {
   .portfolioimage:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.03);
+  }
+
+  .indexSkillsIcon {
+    height: 128px; 
+    width: 128px;
+    transition-duration: 0.5s;
+  }
+
+  .indexSkillsIcon:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
   }
 
   .indeximage{
@@ -284,6 +295,17 @@ footer {
     padding: 20px;
     border-radius: 10px;
   }
+
+  .indexSkillsIcon {
+    height: 128px; 
+    width: 128px;
+    transition-duration: 0.5s;
+  }
+
+  .indexSkillsIcon:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+  }
   
   .rightbody {
     width: 100%;
@@ -312,7 +334,7 @@ footer {
   min-width: 300px; 
   max-width: 800px;
   border-radius: 10px;
-  background-color: #323236;
+  background-color: #28282b;
   padding: 5px;
   margin-left: 40px;
   }
@@ -482,7 +504,7 @@ footer {
 
 #rcorners1 {
   border-radius: 10px;
-  background-color: #323236;
+  background-color: #28282b;
   padding: 5px;
 }
 

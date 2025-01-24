@@ -88,13 +88,14 @@
 
     <div class="rightbody" id="rightbody" style="width: 80%;">
         <div class="center" style="padding-top: 40px; width:40vw; padding-left: 20px; padding-right: 20px;">
-            <div id="rcorners1" style="margin-bottom: 40px;">
+            <div id="rcorners1" style="margin-bottom: 20px;">
                 <p id="abs_center" style="font-size:xx-large; font-weight: bolder; padding: 20px; margin: 0; text-align: center;">
                     Sylvi PNO
                 </p>
             </div>
         </div>
 
+        <hr id="abs_center" style="width: 90%;">
         
         <p id="abs_center" style="font-size:large; font-weight: bold; padding: 20px; margin: 0; text-align: left;">
             Sylvi PNO is an screen based - image detection automation tool developed using Python.
@@ -102,7 +103,7 @@
             <p id="abs_center" style="font-size:large; font-weight: bold; padding: 20px; margin: 0; text-align: center;">
                 The application makes use of libraries such as:<br>
             </p>
-            <ul id="abs_center" style="color:white; font-size:large; font-weight: bold; padding: 20px; margin: 0; text-align: Left;">
+            <ul id="abs_center" style="color:white; font-size:normal; font-weight: 600; padding: 20px; margin: 0; text-align: Left;">
                 <li> TKinter</li>
                 <li> TesseractOCR</li>
                 <li> OpenCV2</li>
@@ -113,26 +114,69 @@
             </ul>
         </p>
 
-        <div class="center" style="padding-top: 10px; width:40vw; padding-left: 20px; padding-right: 20px; padding-bottom: 40px;">
+        <hr id="abs_center" style="width: 90%;">
+
+        <div class="center" style="padding-top: 10px; width:40vw; padding-left: 20px; padding-right: 20px;">
             <div id="rcorners1" style="margin-bottom: 40px;">
-                <p id="abs_center" style="font-size:x-large; font-weight: bold; padding: 20px; margin: 0; text-align: center;">
+                <p id="abs_center" style="font-size:x-large; font-weight: bolder; padding: 5px; margin: 0; text-align: center;">
                     Key Features
                 </p>
             </div>
-            <div id="rcorners1" style="margin-bottom: 40px;">
-                <p id="abs_center" style="font-size:large; font-weight: normal; padding: 20px; margin: 0; text-align: center;">
-                    The core area of the bot is the use of Win32GUI, TesseractOCR and OpenCV2 to read in screen images in real time, detect certain sections of the screen detect a variation of 
-                    text or images to read in data for the bots operation. 
-                </p>
 
-                <img src="images/portfolio/SylviPNO/PNODetection.jpg" class="abs_center" style="padding: 15px; border-radius: 20px;" alt="Coming Soon">
-                
-                <p id="abs_center" style="font-size:large; font-weight: normal; padding: 20px; margin: 0; text-align: center;">
-                    Three examples of this can be seen in the screenshot above where the name of the enemy, and the enemies health and the
-                    current turn number are all read in using Win32GUI to get the intial screen view, then OpenCV2 is used to detect the correct sections of the screen (red, blue and green boxes) to read from. Following
-                    this TesseractOCR is then used to read the text on the screen and get the correct values using a combination of filtering and image adjustment.
-                </p>
+            <div>
+                <div id="rcorners1" style="margin-bottom: 40px;">
+                    <p id="abs_center" style="font-size:large; font-weight: bold; padding: 5px; margin: 0; text-align: center;">
+                        Image Detection and Image Reading
+                    </p>
+                </div>
+    
+                <div id="abs_center">
+                    <img src="images/portfolio/SylviPNO/PNODetection.jpg" style="display: block; border-radius: 20px; padding-bottom: 20px; width:auto; height: auto;" alt="Coming Soon">
+    
+                    <div style="width: 80%">
+                        <p id="abs_center" style="font-size:large; font-weight: normal; padding: 10px; margin: 0; text-align: center; align-content: center;">
+                            The core area of the bot is the use of Win32GUI, TesseractOCR and OpenCV2 to read in screen images in real time, detect certain sections of the screen detect a variation of 
+                            text or images to read in data for the bots operation. 
+                        </p>
+        
+                        <p style="font-size:large; font-weight: normal; padding: 10px; padding-top: 20px; margin: 0; text-align: center;">
+                            Three examples of this can be seen in the screenshot above where the name of the enemy, and the enemies health and the
+                            current turn number are all read in using Win32GUI to get the intial screen view, then OpenCV2 is used to detect the correct sections of the screen (red, blue and green boxes) to read from. Following
+                            this TesseractOCR is then used to read the text on the screen and get the correct values using a combination of filtering and image adjustment.
+                        </p>
+                    </div>
+        
+                </div>
             </div>
+
+            <hr id="abs_center" style="width: 100%;">
+
+            <div>
+                <div id="rcorners1" style="margin-bottom: 40px;">
+                    <p id="abs_center" style="font-size:large; font-weight: bold; padding: 5px; margin: 0; text-align: center;">
+                        Image Detection and Image Reading
+                    </p>
+                </div>
+    
+                <div id="abs_center">
+                    <img src="images/portfolio/SylviPNO/PNODetection.jpg" style="display: block; border-radius: 20px; padding-bottom: 20px; width:auto; height: auto;" alt="Coming Soon">
+    
+                    <div style="width: 80%">
+                        <p id="abs_center" style="font-size:large; font-weight: normal; padding: 10px; margin: 0; text-align: center; align-content: center;">
+                            The core area of the bot is the use of Win32GUI, TesseractOCR and OpenCV2 to read in screen images in real time, detect certain sections of the screen detect a variation of 
+                            text or images to read in data for the bots operation. 
+                        </p>
+        
+                        <p style="font-size:large; font-weight: normal; padding: 10px; padding-top: 20px; margin: 0; text-align: center;">
+                            Three examples of this can be seen in the screenshot above where the name of the enemy, and the enemies health and the
+                            current turn number are all read in using Win32GUI to get the intial screen view, then OpenCV2 is used to detect the correct sections of the screen (red, blue and green boxes) to read from. Following
+                            this TesseractOCR is then used to read the text on the screen and get the correct values using a combination of filtering and image adjustment.
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+
         </div>
     </div>
     
