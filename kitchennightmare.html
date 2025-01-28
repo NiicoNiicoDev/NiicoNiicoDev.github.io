@@ -38,13 +38,6 @@
                     </div>
                     
                     <div class="m_menubutton">
-                        <a href="portfolio.html" style="color: aliceblue; text-decoration: none;"> 
-                            <i class="material-symbols-rounded" id="navbarformat"> work_history </i>
-                            <p style="margin: 0;"> Portfolio </p>
-                        </a>
-                    </div>
-                    
-                    <div class="m_menubutton">
                         <a href="contact.html" class="m_menubutton" style="color: aliceblue; text-decoration: none;"> 
                             <i class="material-symbols-rounded" id="navbarformat"> contact_page </i>
                             <p style="margin: 0;"> Contact </p>
@@ -71,11 +64,6 @@
                             <p id="abs_center" style="margin: 0;"> Skills </p>
                         </a></li>
             
-                        <li><a href="portfolio.html"> 
-                            <i class="material-symbols-rounded" id="navbarformat"> work_history </i> 
-                            <p id="abs_center" style="margin: 0;"> Portfolio </p>
-                        </a></li>
-            
                         <li id="abs_center"><a href="contact.html"> 
                             <i class="material-symbols-rounded" id="navbarformat"> contact_page </i> 
                             <p id="abs_center" style="margin: 0;"> Contact </p>
@@ -86,12 +74,153 @@
         </div>
     </div>
 
+    <div class="socialbar" style="height: fit-content;">
+        <div>
+            <div id="abs_center" style="display: inline; flex-wrap: nowrap; flex-direction: row;">
+                <a href="https://github.com/NiicoNiicoDev" style="margin-right: 10px;">
+                    <img src="images/social/githubicon.png" class="portfolioimage" alt="github" style="max-width: 32px; max-height: 32px; min-height: 32px; min-width: 32px;">
+                </a>
+
+                <a href="https://www.linkedin.com/in/georgewcottrell/">
+                    <img src="images/social/linkedinIcon.png" class="portfolioimage" alt="linkedin" style=" max-width: 32px; max-height: 32px; min-height: 32px; min-width: 32px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="rightbody" id="rightbody" style="width: 80%;">
         <div class="center" style="padding-top: 40px; width:40vw; padding-left: 20px; padding-right: 20px;">
             <div id="rcorners1" style="margin-bottom: 40px;">
                 <p id="abs_center" style="font-size:xx-large; font-weight: bolder; padding: 20px; margin: 0; text-align: center;">
                     Kitchen Nightmare
                 </p>
+            </div>
+        </div>
+
+        <hr id="abs_center" style="width: 90%;">
+
+        <div class="center" style="width:40vw; padding-left: 20px; padding-right: 20px;">
+                <p id="abs_center" style="font-size:large; font-weight: bold; margin: 0; text-align: center;">
+                    Kitchen Nightmare is a 2.5D kitchen themed dungeon crawler about a chef who has lost his mind and developed an unhealthy relationship with his ingredients.
+                </p>
+
+                <p id="abs_center" style="font-size:large; font-weight: bold; padding: 20px; margin: 0; text-align: center;">
+                    The project was completed as part of my 3rd year 'Collaborative Games Development' module at the University of Chester. 
+                    The team for this project consisted of team of 7 members with a composition of 4 Programmers, 2 Artists and UI Designer with myself contributing as the Team Lead, Programmer and Level Designer
+                </p>
+
+        </div>
+
+        <hr id="abs_center" style="width: 90%;">
+
+        <div class="center" style="width:40vw; padding-left: 20px; padding-right: 20px;">
+            <p id="abs_center" style="font-size:x-large; font-weight: bold; padding: 20px; margin: 0; text-align: center; ">
+                Video Playthrough 
+            </p>
+
+            <p id="abs_center" style="font-size:small; font-weight: 200; padding-bottom: 20px; margin: 0; text-align: center; ">
+                <a href="https://www.youtube.com/watch?v=IMaDHpBHBmM">YouTube Link</a>
+            </p>
+            
+
+            <div id="abs_center" style="margin-bottom: 40px;"> 
+                <iframe width="1280" height="720"
+                src="https://www.youtube.com/embed/IMaDHpBHBmM">
+                </iframe>
+            </div>
+            
+        </div>
+
+        <hr id="abs_center" style="width: 90%;">
+
+        <div class="center" style="padding-top: 10px; width:40vw; padding-left: 20px; padding-right: 20px; margin-bottom: 20px;">
+            <div id="rcorners1" style="margin-bottom: 40px;">
+                <p id="abs_center" style="font-size:x-large; font-weight: bolder; padding: 5px; margin: 0; text-align: center;">
+                    Key Features
+                </p>
+            </div>
+
+            <div>
+                <div id="rcorners1" style="margin-bottom: 20px;">
+                    <p id="abs_center" style="font-size:large; font-weight: bold; padding: 5px; margin: 0; text-align: center;">
+                       Procedural Level Generation
+                    </p>
+                </div>
+    
+                <div id="abs_center" style="display: flex; flex-direction: row;" >
+                    <img src="images/portfolio/KitchenNightmare/mst.png" style="display: block; border-radius: 20px; margin-bottom: 20px; width:100%; height: 100%;  margin-right: 20px;" alt="Coming Soon">
+    
+                    <div style="width: 80%; min-width: 400px; max-width: 600px">
+                        <p id="abs_center" style="font-size:large; font-weight: normal; padding: 10px; margin: 0; text-align: center; align-content: center;">
+                            To procedurally generate random rooms and connect them with pathways, three key algorithms were used: 
+                            Delaunay Triangulation, the Minimum Spanning Tree (MST), and the A* search algorithm.
+
+                        </p>
+        
+                        <p style="font-size:large; font-weight: normal; padding: 10px; padding-top: 20px; margin: 0; text-align: center;">
+                            Rooms were placed in an enclosed space and triangulated by x-coordinates, with non-Delaunay triangles adjusted via edge flipping for improved visuals. 
+                            Connections between rooms were formed using the MST, but additional pathways were added to introduce loops and enhance gameplay fluidity.
+                            The A* search algorithm then connected rooms with pathway assets, using Manhattan Distance as a heuristic to create straight, precise hallways for player navigation.
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <hr id="abs_center" style="width: 60%;">
+
+        <div class="center" style="padding-top: 10px; width:40vw; padding-left: 20px; padding-right: 20px; margin-bottom: 20px;">
+            <div>
+                <div id="rcorners1" style="margin-bottom: 20px;">
+                    <p id="abs_center" style="font-size:large; font-weight: bold; padding: 5px; margin: 0; text-align: center;">
+                       Class / Inheritance Based Weapons and Combat System
+                    </p>
+                </div>
+    
+                <div id="abs_center" style="display: flex; flex-direction: row;" >
+    
+                    <div style="width: 80%; min-width: 400px; max-width: 600px">
+                        <p id="abs_center" style="font-size:large; font-weight: normal; padding: 10px; margin: 0; text-align: center; align-content: center;">
+                            I worked with another programmer to develop the attack system framework and several unique weapons. 
+                            This system followed a top-down approach, with a base weapon class from which specific types—Basic, Line, AOE, and Custom Collider—were derived.
+
+                        </p>
+        
+                        <p style="font-size:large; font-weight: normal; padding: 10px; padding-top: 20px; margin: 0; text-align: center;">
+                            For instance, the mortar and pestle inherits core behaviors like damage, collision detection, and radius size from the Base Weapon and AOE classes.
+                            Its unique ability to pull in and push out enemies is implemented within its own derived class.
+                            To handle context-sensitive damage timings, we implemented a "DealDamage" function in the base class, triggered via animation events. 
+                            This ensured consistent damage handling across all weapons, regardless of their effects.
+                        </p>
+                    </div>
+
+                    <img src="images/portfolio/KitchenNightmare/hammer.png" style="display: block; border-radius: 20px; margin-bottom: 20px; width:100%; height: 100%;  margin-left: 20px;" alt="Coming Soon">
+        
+                </div>
+            </div>
+        </div>
+
+        <hr id="abs_center" style="width: 90%;">
+
+        <div class="center" style="padding-top: 10px; width:40vw; padding-left: 20px; padding-right: 20px; margin-bottom: 60px;">
+            <div id="rcorners1" style="margin-bottom: 40px;">
+                <p id="abs_center" style="font-size:x-large; font-weight: bolder; padding: 5px; margin: 0; text-align: center;">
+                    Learning Points
+                </p>
+                
+                <p style="font-size:large; font-weight: normal; padding: 10px; padding-top: 20px; text-align: center;">
+                    Initially, I found the top-down programming approach challenging for conceptualizing and prototyping. 
+                    However, I realized it is highly effective when all requirements are well-defined prior to development, 
+                    providing a structured framework for implementation. This approach enabled our attack system to become a 
+                    well-designed and extensible feature that accommodated all current and future potential weapons and attack types
+                </p>
+
+                <p style="font-size:large; font-weight: normal; padding: 10px; padding-top: 20px; margin-bottom: 60px; text-align: center;">
+                    Additionally, when  working in a collaborative environment, it is crucial to maintain regular updates on feature implementation. 
+                    While adhering to a pre-established plan is essential, individual programming styles and approaches can lead to integration challenges over time if not properly aligned.
+                </p>
+
             </div>
         </div>
     </div>

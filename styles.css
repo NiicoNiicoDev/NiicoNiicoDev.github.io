@@ -22,8 +22,8 @@ footer {
 @media only screen and (max-width: 1400px) {
   .leftbar {
     position: fixed;
-    top: 40px;
-    left: 40px;
+    top: 1vw;
+    left: 1vw;
     background-color:#202023;
     width: 75px;
     height: 100vh;
@@ -31,6 +31,20 @@ footer {
     overflow-x: hidden;
     visibility: hidden;
     padding-top: 100px;
+  }
+
+  .socialbar {
+    position: fixed;
+    bottom: 1vw;
+    left: 1vw; 
+    background-color:#222225;
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    overflow-x: hidden;
+    transition-duration: 0.5s;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   .rightbody {
@@ -284,8 +298,22 @@ footer {
 @media only screen and (min-width: 1401px) {
   .leftbar {
     position: fixed;
-    top: 40px;
-    left: 40px;
+    top: 1vw;
+    left: 1vw;
+    background-color:#202023;
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    overflow-x: hidden;
+    transition-duration: 0.5s;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .socialbar {
+    position: fixed;
+    bottom: 1vw;
+    left: 1vw; 
     background-color:#202023;
     width: fit-content;
     height: fit-content;
