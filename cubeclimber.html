@@ -65,11 +65,106 @@
 
     <div class="rightbody" id="rightbody" style="width: 80%;">
         <div class="center" style="padding-top: 40px; width:40vw; padding-left: 20px; padding-right: 20px;">
-            <div id="rcorners1" style="margin-bottom: 40px;">
+            <div id="rcorners1" style="margin-bottom: 20px;">
                 <p id="abs_center" style="font-size:xx-large; font-weight: bolder; padding: 20px; margin: 0; text-align: center;">
-                    Cube Climber
+                    Cube Climbers
                 </p>
             </div>
+        </div>
+
+        <hr id="abs_center" style="width: 90%;">
+
+        <div class="center" style="width:40vw; padding-left: 20px; padding-right: 20px; margin-bottom: 40px;">
+                <p id="abs_center" style="font-size:large; font-weight: bold; padding: 20px; margin: 0; text-align: center;">
+                Cube Climbers is a hyper-casual mobile game developed for the android platform with Unity. This project was completed
+                as part of my final year Games Design and Implementation module at the University of Chester
+                </p>
+
+                
+                <div id="abs_center">
+                    <img src="images/portfolio/CubeClimbers/Cube Climber Feature Image.png" style="display: block; border-radius: 20px; margin-bottom: 20px; width:auto; height: auto;  margin-right: 20px;" alt="Coming Soon">
+                </div>
+        </div>
+        
+        
+
+        <hr id="abs_center" style="width: 90%;">
+
+        <div class="center" style="padding-top: 10px; width:40vw; padding-left: 20px; padding-right: 20px;">
+            <div id="rcorners1" style="margin-bottom: 10px;">
+                <p id="abs_center" style="font-size:x-large; font-weight: bolder; padding: 5px; margin: 0; text-align: center;">
+                    Key Features
+                </p>
+            </div>
+
+            <div>
+                <div id="rcorners1" style="margin-bottom: 20px;">
+                    <p id="abs_center" style="font-size:large; font-weight: bold; padding: 5px; margin: 0; text-align: center;">
+                       Line Rendering and Calculation
+                    </p>
+                </div>
+    
+                <div id="abs_center" style="display: flex; flex-direction: row;" >
+                    <img src="images/portfolio/CubeClimbers/Screenshot 1.png" style="display: block; border-radius: 20px; margin-bottom: 20px; width:auto; height: auto;  margin-right: 20px;" alt="Coming Soon">
+    
+                    <div style="width: 80%; min-width: 400px; max-width: 600px">
+                        <p id="abs_center" style="font-size:large; font-weight: normal; padding: 10px; margin: 0; text-align: center; align-content: center;">
+                            One of the big areas of development where a large amount of time was spent during this project was on the line renderer used to show the player where they would be jumping.
+                            This was first intended as just a small feature to enable the player to have a slightly easier time when playing Cube Climbers. However, for this project we were given relatively old hardware
+                            and had strict performance targets to meet for the final submission. This meant that drawing a varied mathetmatical line each and every frame was going to be resource intensive. This meant that I
+                            would have to think of a more complex but efficient solution.
+                        </p>
+        
+                        <p style="font-size:large; font-weight: normal; padding: 10px; padding-top: 20px; margin: 0; text-align: center;">
+                            My solution to this ended up being my first venture into shader programming using HLSL. This meant that instead of using the in-built line renderer that is a part of the unity engine i would instead
+                            have to calculate a number of vertices for the line and then use the GPU Cores of the hardwares mobile processor to draw this line to the screen. Once completed and tested this method resulted in a average framerate 
+                            increase of 9 frames per second across the entire game allowing me to once again meet the performance requirements outlined for this project.
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+
+            <hr id="abs_center" style="width: 100%; margin-bottom: 20px;">
+
+            <div>
+                <div id="rcorners1" style="margin-bottom: 20px;">
+                    <p id="abs_center" style="font-size:large; font-weight: bold; padding: 5px; margin: 0; text-align: center;">
+                        Platform Physics
+                    </p>
+                </div>
+    
+                <div id="abs_center" style="display: flex; flex-direction:unset;" >
+                    <img src="images/portfolio/CubeClimbers/Screenshot 3.png" style="display: block; border-radius: 20px; margin-bottom: 20px; width:auto; height: auto;  margin-right: 20px;" alt="Coming Soon">
+    
+                    <div style="width: 80%; min-width: 400px; max-width: 600px">
+                        <p id="abs_center" style="font-size:large; font-weight: normal; padding: 10px; margin: 0; text-align: center; align-content: center;">
+                            The next large area of the development was both from a design and programatic perspective. Making the game feel challenging whilst also being somewhat unique was an important part of this project.
+                            As again laid out in the brief for this assignment, we had to create a game with as unique of a selling point as we could. From this I came to the conclusion to create a hyper-casual but also extremely difficult
+                            tower climbing game similar to titles such as Jump-King or Getting Over It with Bennet Foddy. The one key difference between these two titles and my game would be that mine would be much more physics based and
+                            have a more aggresive learning curve.
+                        </p>
+        
+                        <p style="font-size:large; font-weight: normal; padding: 10px; padding-top: 20px; margin: 0; text-align: center;">
+                            From this I then planned the idea to have a total of 6 different types of platform: Standard, Bouncy, Moving, Rotating, Icy and Oily. Each of these platforms would behave a notably different way or
+                            have significantly different physical propertites to the others. Two examples of this are the Icy platform gave the player a very small amount of grip and thus players had to carefully calculate their
+                            landing velocity when landing on an ice platform or they would slip off. The Oily platform was similar but instead offered the player 0 grip meaning that the player would always slide off these platforms.
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+
+            <hr id="abs_center" style="width: 90%;">
+
+            <div class="center" style="padding-top: 10px; width:40vw; padding-left: 20px; padding-right: 20px;">
+                <div id="rcorners1" style="margin-bottom: 40px;">
+                    <p id="abs_center" style="font-size:x-large; font-weight: bolder; padding: 5px; margin: 0; text-align: center;">
+                        Learning Points
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
     
